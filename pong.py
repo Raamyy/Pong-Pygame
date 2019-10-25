@@ -13,7 +13,6 @@ directory = os.getcwd()
 collision_sound = directory + "/sounds/ping_pong_8bit_plop.ogg"
 point_sound = directory + "/sounds/ping_pong_8bit_beeep.ogg"
 
-
 class Player(pygame.sprite.Sprite):
     def __init__(self, x, key_up, key_down, isAi, ball=None):
         pygame.sprite.Sprite.__init__(self)
@@ -42,7 +41,6 @@ class Player(pygame.sprite.Sprite):
                     self.rect.y -= 5
         else:
             self.rect.y = self.ball.rect.y
-
         game.screen.blit(self.image, (self.rect.x, self.rect.y))
 
 
